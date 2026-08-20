@@ -13,7 +13,7 @@ const preguntas_151_200 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/151.png"
     },
     {
         id: 152,
@@ -403,7 +403,7 @@ const preguntas_151_200 = [
             "La proximidad de una intersección rotatoria (óvalo o rotonda)."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/181.png"
     },
     {
         id: 182,
@@ -416,7 +416,7 @@ const preguntas_151_200 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/182.png"
     },
     {
         id: 183,
@@ -481,7 +481,7 @@ const preguntas_151_200 = [
             "Tocar el claxon para que el peatón no cruce la calzada"
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/187.png"
     },
     {
         id: 188,
@@ -611,7 +611,7 @@ const preguntas_151_200 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/197.png"
     },
     {
         id: 198,
@@ -637,7 +637,7 @@ const preguntas_151_200 = [
             "Que es una isla de refugio peatonal."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/199.png"
     },
     {
         id: 200,
@@ -650,6 +650,6 @@ const preguntas_151_200 = [
             "El conductor del camión puede estacionarse antes de empezar las líneas continuas"
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/200.png"
     },
 ];

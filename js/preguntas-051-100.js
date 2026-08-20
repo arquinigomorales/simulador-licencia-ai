@@ -221,7 +221,7 @@ const preguntas_051_100 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/067.png"
     },
     {
         id: 68,
@@ -559,7 +559,7 @@ const preguntas_051_100 = [
             "Cambiarse al carril izquierdo con precaución."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/093.png"
     },
     {
         id: 94,
@@ -637,7 +637,7 @@ const preguntas_051_100 = [
             "Puede hacerlo por la izquierda."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/099.png"
     },
     {
         id: 100,
@@ -650,6 +650,6 @@ const preguntas_051_100 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/100.png"
     },
 ];

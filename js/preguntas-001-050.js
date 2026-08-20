@@ -52,7 +52,7 @@ const preguntas_001_050 = [
             "Ninguna de las alternativas es correcta"
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/004.png"
     },
     {
         id: 5,
@@ -117,7 +117,7 @@ const preguntas_001_050 = [
             "Prohíbe la circulación de vehículos motorizados"
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/009.png"
     },
     {
         id: 10,
@@ -234,7 +234,7 @@ const preguntas_001_050 = [
             "Prohíbe hacer ruido."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/018.png"
     },
     {
         id: 19,
@@ -364,7 +364,7 @@ const preguntas_001_050 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/028.png"
     },
     {
         id: 29,
@@ -416,7 +416,7 @@ const preguntas_001_050 = [
             "La señal P-2A advierte la presencia de curva pronunciada a la derecha mientras que la P-1A advierte la presencia de curva suave a la derecha."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/032.png"
     },
     {
         id: 33,
@@ -429,7 +429,7 @@ const preguntas_001_050 = [
             "No se encuentra regulada en el reglamento."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/033.png"
     },
     {
         id: 34,
@@ -455,7 +455,7 @@ const preguntas_001_050 = [
             "El que haga sonar la bocina primero."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/035.png"
     },
     {
         id: 36,
@@ -650,6 +650,6 @@ const preguntas_001_050 = [
             "Ensanchamiento de la calzada en ambos lados."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/050.png"
     },
 ];

@@ -13,7 +13,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta"
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/101.png"
     },
     {
         id: 102,
@@ -26,7 +26,7 @@ const preguntas_101_150 = [
             "Mantener la distancia entre vehículos por seguridad."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/102.png"
     },
     {
         id: 103,
@@ -39,7 +39,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/103.png"
     },
     {
         id: 104,
@@ -52,7 +52,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/104.png"
     },
     {
         id: 105,
@@ -65,7 +65,7 @@ const preguntas_101_150 = [
             "Que al salir de la vía por donde está circulando, la velocidad mínima es 50 km/h."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/105.png"
     },
     {
         id: 106,
@@ -78,7 +78,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/106.png"
     },
     {
         id: 107,
@@ -91,7 +91,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/107.png"
     },
     {
         id: 108,
@@ -104,7 +104,7 @@ const preguntas_101_150 = [
             "No es una señal válida en el Perú."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/108.png"
     },
     {
         id: 109,
@@ -117,7 +117,7 @@ const preguntas_101_150 = [
             "Que los peatones deben circular por la derecha."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/109.png"
     },
     {
         id: 110,
@@ -130,7 +130,7 @@ const preguntas_101_150 = [
             "Circular con luces bajas."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/110.png"
     },
     {
         id: 111,
@@ -143,7 +143,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/111.png"
     },
     {
         id: 112,
@@ -156,7 +156,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/112.png"
     },
     {
         id: 113,
@@ -169,7 +169,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/113.png"
     },
     {
         id: 114,
@@ -182,7 +182,7 @@ const preguntas_101_150 = [
             "No es una señal válida en el Perú."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/114.png"
     },
     {
         id: 115,
@@ -195,7 +195,7 @@ const preguntas_101_150 = [
             "Hay una curva y contra- curva pronunciada a la izquierda."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/115.png"
     },
     {
         id: 116,
@@ -208,7 +208,7 @@ const preguntas_101_150 = [
             "Se aproxima a un camino sinuoso a la izquierda."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/116.png"
     },
     {
         id: 117,
@@ -221,7 +221,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/117.png"
     },
     {
         id: 118,
@@ -234,7 +234,7 @@ const preguntas_101_150 = [
             "Se aproxima a un badén."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/118.png"
     },
     {
         id: 119,
@@ -247,7 +247,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/119.png"
     },
     {
         id: 120,
@@ -260,7 +260,7 @@ const preguntas_101_150 = [
             "Cercanía de una ciclovía."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/120.png"
     },
     {
         id: 121,
@@ -273,7 +273,7 @@ const preguntas_101_150 = [
             "Todas las alternativas son correctas."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/121.png"
     },
     {
         id: 122,
@@ -286,7 +286,7 @@ const preguntas_101_150 = [
             "La ubicación de un cruce de ciclistas."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/122.png"
     },
     {
         id: 123,
@@ -299,7 +299,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/123.png"
     },
     {
         id: 124,
@@ -312,7 +312,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/124.png"
     },
     {
         id: 125,
@@ -325,7 +325,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/125.png"
     },
     {
         id: 126,
@@ -338,7 +338,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/126.png"
     },
     {
         id: 127,
@@ -351,7 +351,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/127.png"
     },
     {
         id: 128,
@@ -364,7 +364,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/128.png"
     },
     {
         id: 129,
@@ -377,7 +377,7 @@ const preguntas_101_150 = [
             "Niños jugando."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/129.png"
     },
     {
         id: 130,
@@ -390,7 +390,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/130.png"
     },
     {
         id: 131,
@@ -403,7 +403,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/131.png"
     },
     {
         id: 132,
@@ -416,7 +416,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/132.png"
     },
     {
         id: 133,
@@ -429,7 +429,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/133.png"
     },
     {
         id: 134,
@@ -442,7 +442,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/134.png"
     },
     {
         id: 135,
@@ -455,7 +455,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/135.png"
     },
     {
         id: 136,
@@ -468,7 +468,7 @@ const preguntas_101_150 = [
             "Aviones que generan ruido."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/136.png"
     },
     {
         id: 137,
@@ -481,7 +481,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/137.png"
     },
     {
         id: 138,
@@ -494,7 +494,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/138.png"
     },
     {
         id: 139,
@@ -507,7 +507,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/139.png"
     },
     {
         id: 140,
@@ -520,7 +520,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/140.png"
     },
     {
         id: 141,
@@ -533,7 +533,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 0,
-        image: null
+        image: "images/preguntas/141.png"
     },
     {
         id: 142,
@@ -546,7 +546,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/142.png"
     },
     {
         id: 143,
@@ -559,7 +559,7 @@ const preguntas_101_150 = [
             "Proximidad de un estacionamiento para emergencias."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/143.png"
     },
     {
         id: 144,
@@ -572,7 +572,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/144.png"
     },
     {
         id: 145,
@@ -585,7 +585,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta"
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/145.png"
     },
     {
         id: 146,
@@ -598,7 +598,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 2,
-        image: null
+        image: "images/preguntas/146.png"
     },
     {
         id: 147,
@@ -611,7 +611,7 @@ const preguntas_101_150 = [
             "Cercanía a una llantería."
         ],
         correct: 3,
-        image: null
+        image: "images/preguntas/147.png"
     },
     {
         id: 148,
@@ -624,7 +624,7 @@ const preguntas_101_150 = [
             "Ninguna de las alternativas es correcta."
         ],
         correct: 1,
-        image: null
+        image: "images/preguntas/148.png"
     },
     {
         id: 149,
