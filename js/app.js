@@ -22,6 +22,8 @@ const scoreInfo = document.getElementById("scoreInfo");
 
 const questionImage = document.getElementById("questionImage");
 
+const mtcQuestionNumber = document.getElementById("mtcQuestionNumber");
+
 
 /* =========================
    UTILIDADES
@@ -114,9 +116,8 @@ function loadQuestion() {
     progressBar.style.width =
         progress + "%";
 
-
-    questionText.textContent =
-        question.question;
+    mtcQuestionNumber.textContent = `Pregunta oficial MTC #${question.id}`;
+    questionText.textContent = question.question;
 
 
     /* IMAGEN */
