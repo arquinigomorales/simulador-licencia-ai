@@ -1,469 +1,271 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Simulador Licencia A-I</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <title>
+        Simulador Licencia A-I
+    </title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            color: #222;
-        }
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .header h1 {
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            color: #666;
-        }
-
-        .card {
-            background: white;
-            border-radius: 14px;
-            padding: 22px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-        }
-
-        .top-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .progress-container {
-            width: 100%;
-            background: #ddd;
-            border-radius: 20px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background: #0077cc;
-            width: 0%;
-            transition: width 0.3s;
-        }
-
-        .question {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
-
-        .answers {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .answer {
-            border: 2px solid #ddd;
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.2s;
-            background: white;
-            text-align: left;
-            font-size: 16px;
-        }
-
-        .answer:hover {
-            border-color: #0077cc;
-        }
-
-        .answer.correct {
-            background: #d4edda;
-            border-color: #28a745;
-        }
-
-        .answer.incorrect {
-            background: #f8d7da;
-            border-color: #dc3545;
-        }
-
-        .answer.disabled {
-            pointer-events: none;
-        }
-
-        .feedback {
-            margin-top: 18px;
-            padding: 12px;
-            border-radius: 8px;
-            display: none;
-        }
-
-        .feedback.correct {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .feedback.incorrect {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .next-button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 14px;
-            border: none;
-            border-radius: 10px;
-            background: #0077cc;
-            color: white;
-            font-size: 17px;
-            cursor: pointer;
-            display: none;
-        }
-
-        .next-button:hover {
-            background: #005fa3;
-        }
-
-        .result {
-            text-align: center;
-            display: none;
-        }
-
-        .result h2 {
-            font-size: 28px;
-        }
-
-        .score {
-            font-size: 48px;
-            font-weight: bold;
-            color: #0077cc;
-        }
-
-        .restart-button {
-            margin-top: 20px;
-            padding: 14px 24px;
-            border: none;
-            background: #0077cc;
-            color: white;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        @media (max-width: 600px) {
-
-            .container {
-                padding: 12px;
-            }
-
-            .card {
-                padding: 18px;
-            }
-
-            .question {
-                font-size: 18px;
-            }
-
-            .answer {
-                font-size: 15px;
-            }
-        }
-    </style>
 </head>
+
 
 <body>
 
 <div class="container">
 
+
+    <!-- CABECERA -->
+
     <div class="header">
-        <h1>🚗 Simulador Licencia A-I</h1>
-        <p>Práctica para el examen teórico de conducción</p>
+
+        <h1>
+            🚗 Simulador Licencia A-I
+        </h1>
+
+        <p>
+            Práctica para el examen teórico de conducción
+        </p>
+
     </div>
 
-    <div class="card" id="quizCard">
+
+
+    <!-- ======================
+         MENÚ
+    ======================= -->
+
+    <div
+        class="card"
+        id="homeScreen"
+    >
+
+        <h2>
+            ¿Cómo quieres practicar?
+        </h2>
+
+
+        <div class="menu">
+
+
+            <button
+                class="menu-button"
+                onclick="startQuickPractice()"
+            >
+
+                <span class="menu-title">
+                    ⚡ Práctica rápida
+                </span>
+
+                <span class="menu-description">
+                    10 preguntas seleccionadas al azar.
+                </span>
+
+            </button>
+
+
+            <button
+                class="menu-button"
+                onclick="startFullPractice()"
+            >
+
+                <span class="menu-title">
+                    📚 Banco completo
+                </span>
+
+                <span class="menu-description">
+                    Practica todas las preguntas disponibles.
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ======================
+         QUIZ
+    ======================= -->
+
+    <div
+        class="card hidden"
+        id="quizCard"
+    >
+
 
         <div class="top-info">
+
             <span id="questionNumber"></span>
-            <span id="scoreInfo">Correctas: 0</span>
+
+            <span id="scoreInfo">
+                Correctas: 0
+            </span>
+
         </div>
+
 
         <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
+
+            <div
+                class="progress-bar"
+                id="progressBar"
+            ></div>
+
         </div>
 
-        <div class="question" id="questionText"></div>
 
-        <div class="answers" id="answersContainer"></div>
+        <div
+            class="question"
+            id="questionText"
+        ></div>
 
-        <div class="feedback" id="feedback"></div>
 
-        <button class="next-button" id="nextButton">
+        <img
+            id="questionImage"
+            class="question-image"
+            alt="Imagen relacionada con la pregunta"
+        >
+
+
+        <div
+            class="answers"
+            id="answersContainer"
+        ></div>
+
+
+        <div
+            class="feedback"
+            id="feedback"
+        ></div>
+
+
+        <button
+            class="primary-button hidden"
+            id="nextButton"
+        >
             Siguiente
         </button>
 
+
+        <button
+            class="secondary-button"
+            onclick="goHome()"
+        >
+            Salir de la práctica
+        </button>
+
+
     </div>
 
-    <div class="card result" id="resultCard">
 
-        <h2>Simulacro terminado</h2>
 
-        <p>Tu resultado fue:</p>
+    <!-- ======================
+         RESULTADOS
+    ======================= -->
 
-        <div class="score" id="finalScore"></div>
+    <div
+        class="card result hidden"
+        id="resultCard"
+    >
+
+
+        <h2>
+            🎯 Resultado
+        </h2>
+
+
+        <div
+            class="score"
+            id="finalScore"
+        ></div>
+
 
         <p id="finalMessage"></p>
 
-        <button class="restart-button" onclick="restartQuiz()">
-            Intentar nuevamente
+
+        <div class="result-details">
+
+
+            <div class="result-stat">
+
+                <span>
+                    Porcentaje
+                </span>
+
+                <strong id="percentage"></strong>
+
+            </div>
+
+
+            <div class="result-stat">
+
+                <span>
+                    Correctas
+                </span>
+
+                <strong id="correctResult"></strong>
+
+            </div>
+
+
+            <div class="result-stat">
+
+                <span>
+                    Incorrectas
+                </span>
+
+                <strong id="errorResult"></strong>
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            id="retryErrors"
+            class="primary-button hidden"
+            onclick="practiceErrors()"
+        >
+            🔁 Practicar mis errores
         </button>
+
+
+        <button
+            class="secondary-button"
+            onclick="goHome()"
+        >
+            Volver al menú
+        </button>
+
 
     </div>
 
+
 </div>
 
-<script>
 
-const questions = [
+<script src="js/preguntas.js"></script>
 
-    {
-        question: "Está permitido en la vía:",
-        answers: [
-            "Recoger o dejar pasajeros o carga en cualquier lugar.",
-            "Dejar animales sueltos o situarlos de forma tal que obstaculicen el tránsito.",
-            "Recoger o dejar pasajeros en lugares autorizados.",
-            "Ejercer el comercio ambulatorio o estacionario."
-        ],
-        correct: 2
-    },
+<script src="js/app.js"></script>
 
-    {
-        question: "Respecto de los dispositivos de control o regulación del tránsito:",
-        answers: [
-            "Solo los peatones están obligados a su obediencia.",
-            "Los conductores y peatones están obligados a su obediencia, salvo instrucción contraria de la Policía Nacional del Perú asignada al tránsito.",
-            "Solo los conductores están obligados a su obediencia.",
-            "Los conductores deben obedecerlos aun cuando la Policía indique lo contrario."
-        ],
-        correct: 1
-    },
-
-    {
-        question: "El color ámbar o amarillo del semáforo significa que:",
-        answers: [
-            "Los vehículos deben avanzar.",
-            "Los vehículos deben detenerse siempre.",
-            "Los vehículos deben acelerar la marcha.",
-            "Los vehículos deben detenerse antes de ingresar a la intersección si su velocidad y ubicación lo permiten; de lo contrario deberán cruzar y despejar la intersección."
-        ],
-        correct: 3
-    },
-
-    {
-        question: "En una rotonda, tiene prioridad de paso el vehículo que:",
-        answers: [
-            "Quiere ingresar a la rotonda.",
-            "Circula por ella.",
-            "Acelera primero.",
-            "Hace sonar la bocina."
-        ],
-        correct: 1
-    },
-
-    {
-        question: "Si un conductor está tomando medicamentos y por ello siente sueño, ¿qué debe hacer?",
-        answers: [
-            "Manejar normalmente.",
-            "Manejar despacio.",
-            "Abstenerse de manejar.",
-            "Manejar con un copiloto."
-        ],
-        correct: 2
-    }
-
-];
-
-let currentQuestion = 0;
-let score = 0;
-let answered = false;
-
-const questionText = document.getElementById("questionText");
-const questionNumber = document.getElementById("questionNumber");
-const answersContainer = document.getElementById("answersContainer");
-const nextButton = document.getElementById("nextButton");
-const feedback = document.getElementById("feedback");
-const progressBar = document.getElementById("progressBar");
-const scoreInfo = document.getElementById("scoreInfo");
-
-function loadQuestion() {
-
-    answered = false;
-
-    nextButton.style.display = "none";
-
-    feedback.style.display = "none";
-
-    answersContainer.innerHTML = "";
-
-    const question = questions[currentQuestion];
-
-    questionNumber.textContent =
-        `Pregunta ${currentQuestion + 1} de ${questions.length}`;
-
-    questionText.textContent = question.question;
-
-    const progress =
-        ((currentQuestion) / questions.length) * 100;
-
-    progressBar.style.width = progress + "%";
-
-    question.answers.forEach((answer, index) => {
-
-        const button = document.createElement("button");
-
-        button.className = "answer";
-
-        button.textContent =
-            String.fromCharCode(65 + index) + ". " + answer;
-
-        button.addEventListener("click", () => {
-            selectAnswer(index, button);
-        });
-
-        answersContainer.appendChild(button);
-
-    });
-
-}
-
-function selectAnswer(selectedIndex, selectedButton) {
-
-    if (answered) return;
-
-    answered = true;
-
-    const question = questions[currentQuestion];
-
-    const buttons =
-        document.querySelectorAll(".answer");
-
-    buttons.forEach(button => {
-        button.classList.add("disabled");
-    });
-
-    if (selectedIndex === question.correct) {
-
-        score++;
-
-        selectedButton.classList.add("correct");
-
-        feedback.textContent =
-            "✓ Respuesta correcta";
-
-        feedback.className =
-            "feedback correct";
-
-    } else {
-
-        selectedButton.classList.add("incorrect");
-
-        buttons[question.correct]
-            .classList.add("correct");
-
-        feedback.textContent =
-            "✗ Respuesta incorrecta. La alternativa correcta está marcada en verde.";
-
-        feedback.className =
-            "feedback incorrect";
-
-    }
-
-    feedback.style.display = "block";
-
-    scoreInfo.textContent =
-        `Correctas: ${score}`;
-
-    nextButton.style.display = "block";
-
-}
-
-nextButton.addEventListener("click", () => {
-
-    currentQuestion++;
-
-    if (currentQuestion < questions.length) {
-
-        loadQuestion();
-
-    } else {
-
-        showResults();
-
-    }
-
-});
-
-function showResults() {
-
-    document.getElementById("quizCard")
-        .style.display = "none";
-
-    document.getElementById("resultCard")
-        .style.display = "block";
-
-    const percentage =
-        Math.round((score / questions.length) * 100);
-
-    document.getElementById("finalScore")
-        .textContent =
-        `${score}/${questions.length}`;
-
-    document.getElementById("finalMessage")
-        .textContent =
-        `Obtuviste ${percentage}% de respuestas correctas.`;
-
-}
-
-function restartQuiz() {
-
-    currentQuestion = 0;
-
-    score = 0;
-
-    scoreInfo.textContent =
-        "Correctas: 0";
-
-    document.getElementById("quizCard")
-        .style.display = "block";
-
-    document.getElementById("resultCard")
-        .style.display = "none";
-
-    loadQuestion();
-
-}
-
-loadQuestion();
-
-</script>
 
 </body>
+
 </html>
